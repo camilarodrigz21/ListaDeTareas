@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <h1 class="nav-title">Lista de Tareas</h1>
+        <div class="container-nav">
+            <input type="text" id="search-task" placeholder="Buscar tarea...">
+            <button type="button" onclick="buscarTareas()">Buscar</button>
+        </div>
+    </nav>
+    
+    <div class="todo-container">
+        <h2>Tareas</h2>
+        <form id="todo-form">
+            <input type="text" id="new-task" placeholder="Nueva tarea..." autocomplete="off" autocorrect="off" autocapitalize="off"> 
+            <button type="submit">Agregar</button>
+        </form>
+        <ul id="task-list"> 
+        </ul>
+    </div>
+    <script src="./listas.js"></script>
+</body>
+</html>
